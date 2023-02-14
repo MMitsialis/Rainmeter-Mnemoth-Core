@@ -21,3 +21,11 @@ H=14
 Text=[MeasureTopGPU:1]%
 
 
+[meterBarTopGPU]
+;MeasureName=measureCPU4
+Meter=Bar
+MeterStyle=styleBar
+X=10
+Y=12r
+W=190
+H=1

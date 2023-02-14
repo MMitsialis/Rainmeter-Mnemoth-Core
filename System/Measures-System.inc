@@ -21,6 +21,25 @@ IfTrueAction=[!SetOption meterValueCPU FontColor "255,0,0"]
 IfFalseAction=[!SetOption meterValueCPU FontColor "0,255,0"]
 UpdateDivider=5
 
+[measureCPU3]
+; This measure returns the average CPU load between all cores.
+Measure=CPU
+Processor=2
+IfCondition=MeasureCPU > 80
+IfTrueAction=[!SetOption meterValueCPU FontColor "255,0,0"]
+IfFalseAction=[!SetOption meterValueCPU FontColor "0,255,0"]
+UpdateDivider=5
+
+[measureCPU4]
+; This measure returns the average CPU load between all cores.
+Measure=CPU
+Processor=3
+IfCondition=MeasureCPU > 80
+IfTrueAction=[!SetOption meterValueCPU FontColor "255,0,0"]
+IfFalseAction=[!SetOption meterValueCPU FontColor "0,255,0"]
+UpdateDivider=5
+
+
 [measureRAM]
 ; Returns the amount of RAM used in bytes.
 Measure=PhysicalMemory
